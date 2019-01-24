@@ -30,8 +30,9 @@
                 <i class="fas fa-chevron-down low2 fa-2x"></i>
             </div>
         </div>
-        <div class="row">
-            <div class="col-xs-12 middle">
+        <div class="row middle">
+            <div class="col-sm">
+                <div id="aboutMe">
                 <h3 id="abm">About Me</h3>
                 <p id="abmbody">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean rhoncus malesuada sodales. Suspendisse porttitor
                     turpis dui, accumsan tincidunt lorem venenatis sit amet. Aliquam id justo ac ante aliquet malesuada convallis
@@ -39,7 +40,7 @@
                     quis. Vivamus id consequat lacus. Sed et sollicitudin velit. Nam imperdiet a est a maximus. Integer maximus
                     hendrerit sapien quis volutpat. Duis tincidunt ac arcu ac auctor. Ut a pretium velit. Donec lacus elit,
                     laoreet euismod nisl ut, porttitor scelerisque nunc.</p>
-                <div class="d-flex flex-row justify-content-center">
+                <div class="d-flex flex-row justify-content-center align-items-start" id="icons">
                     <div class="p-4">
                         <i class="fab fa-html5 low2 fa-2x"></i>
                     </div>
@@ -59,37 +60,44 @@
                         <i class="fab fa-react low2 fa-2x"></i>
                     </div>
                 </div>
-                <img id="ava" src="https://i.ytimg.com/vi/gut-FzTZ-ec/hqdefault.jpg">
+            </div>
+                <div id="skillsbody">
+                    <h3 id="skills">Skills</h3>
+                    <div id="skilllist">
+                        <p>HTML | CSS | JavaScript
+                        </p>
+                        <p>SQL & NoSQL Databases</p> 
+                        <p>Node | React</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <img id="ava" class="img-fluid rounded" src="./imgs/smaller headshot (2).jpg">
             </div>
         </div>
-        <div class="row">
+        <div class="row" id="third">
             <div class="col-sm">
-                <h3>Project 1</h3>
-                <img class="img-thumbnail" id="img1" src="http://cohenwoodworking.com/wp-content/uploads/2016/09/image-placeholder-500x500.jpg">
+                <h3>Who's Down</h3>
+                <img class="img-thumbnail" id="img1" src="./imgs/whosDown.gif">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing </p>
             </div>
             <div class="col-sm">
-                <h3>Project 2</h3>
-                <img class="img-thumbnail" src="http://cohenwoodworking.com/wp-content/uploads/2016/09/image-placeholder-500x500.jpg">
+                <h3>PostIt</h3>
+                <img class="img-thumbnail" src="./imgs/posltit.gif">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing </p>
             </div>
             <div class="col-sm">
-                <h3>Project 3</h3>
-                <img class="img-thumbnail" src="http://cohenwoodworking.com/wp-content/uploads/2016/09/image-placeholder-500x500.jpg">
+                <h3>Hangman</h3>
+                <img class="img-thumbnail" src="./imgs/hangman.gif">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing </p>
             </div>
         </div>
-        <div class="row">
+        <div class="row" id="fourth">
             <div class="col sm">
                 <h3>Contact Me</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing </p>
             </div>
         </div>
-
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-            Launch demo modal
-        </button>
-
 
         <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
@@ -101,11 +109,8 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        ...
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
+                    <div class="modal-image">
                     </div>
                 </div>
             </div>
@@ -113,5 +118,6 @@
     </div>
 
 </body>
-<script src="app.js";></script>
+<script src="app.js"></script>
+
 </html>
