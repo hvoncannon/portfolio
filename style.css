@@ -12,9 +12,12 @@ body {
     height: 100vh;
 }
 .middle {
+    background-image: url("./imgs/pipes.png");
     height: 110vh;
     width: 100vw;
     background-color: #f1efe2;
+    background-attachment: fixed;
+    background-position: center;
 }
 h2 {
     margin: 0px;
@@ -38,6 +41,7 @@ h2 {
     top:15%;
     word-wrap: break-word;
     width: 400px;
+    background-color: antiquewhite;
 }
 #icons{
     position: absolute;
