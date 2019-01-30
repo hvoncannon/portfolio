@@ -41,8 +41,10 @@ h2 {
     top:15%;
     word-wrap: break-word;
     width: 400px;
-    background-color: antiquewhite;
+    border-radius: 5%;
+    background: rgba(204, 204, 204, .4)
 }
+
 #icons{
     position: absolute;
     top: 43%;
