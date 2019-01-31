@@ -56,7 +56,8 @@ h2 {
     top: 5%;
     max-height: 50%;
     animation-name: shake1;
-    animation-duration: 20s;
+    animation-duration: 17s;
+    animation-iteration-count: infinite; 
 }
 
 #LBJP:hover {
@@ -71,7 +72,8 @@ h2 {
     top: 45%;
     max-height: 50%;
     animation-name: shake2;
-    animation-duration: 20s;
+    animation-duration: 18s;
+    animation-iteration-count: infinite;
 }
 
 #nashville:hover {
@@ -86,7 +88,8 @@ h2 {
     top: 15%;
     max-height: 50%;
     animation-name: shake3;
-    animation-duration: 20s;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
 }
 
 #desk:hover {
