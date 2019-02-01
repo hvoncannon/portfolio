@@ -13,7 +13,8 @@ body {
 }
 .middle {
     background-image: url("./imgs/pipes.png");
-    height: 130vh;
+    /* height: 130vh; */
+    height: 1050px;
     width: 100vw;
     background-color: #f1efe2;
     background-attachment: fixed;
@@ -27,36 +28,60 @@ h2 {
     animation-name: titleText;
     animation-duration: 2s;
 }
+
+h3 {
+    font-weight: 200;
+}
+
 #abm {
     position: relative;
     left: 2%;
     top: 10%;
 }
 #aboutMe{
-    position: absolute;
-    left: 2%;
+    position: relative;
+    left: 1%;
     top: 2%;
 }
 #abmbody {
-    position: absolute;
+    position: relative;
     left: 2%;
     top: 100%;
     word-wrap: break-word;
-    width: 350%;
+    width: 50%;
     border: 1px solid black;
     padding: 5px;
-    border-radius: 5%;
+    /* border-radius: 5%; */
     background: rgba(255, 255, 255, 0.8)
 }
 
 #icons{
-    position: absolute;
-    top: 38%;
-    left: 6.5%;
+    position: relative;
+    top: 5%;
+    left: -25%;
 }
+
+#skillSection {
+    position: relative;
+    top: 6%;
+    left: 2%;
+}
+
+#skillList {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    /* margin-left: 1%; */
+    padding: 0;
+    border: 1px solid black;
+    padding: 5px;
+    /* border-radius: 2%; */
+    background: rgba(255, 255, 255, 0.8);
+}
+
 #LBJP {
     position: absolute;
-    left: 25%;
+    left: 28%;
     top: 5%;
     max-height: 50%;
     animation-name: shake1;
@@ -72,8 +97,8 @@ h2 {
 
 #nashville {
     position: absolute;
-    left: 5%;
-    top: 45%;
+    left: 12%;
+    top: 48%;
     max-height: 50%;
     animation-name: shake2;
     animation-duration: 18s;
@@ -88,8 +113,8 @@ h2 {
 
 #desk {
     position: absolute;
-    left: -35%;
-    top: 15%;
+    left: -33%;
+    top: 13%;
     max-height: 50%;
     animation-name: shake3;
     animation-duration: 15s;
@@ -119,22 +144,16 @@ h2:before {
     animation-fill-mode: forwards;
  } 
 
-#skillsbody {
-    position: relative;
-    top: 45%;
-    left: 2%;
-}
-
 #testimonialsSection {
     position: relative;
-    top: 56%;
+    top: 10%;
     left: 2%;
 }
 
 #testimonialsSection > p {
     border: 1px solid black;
     padding: 5px;
-    border-radius: 2%;
+    /* border-radius: 2%; */
     background: rgba(255, 255, 255, 0.8);
 }
  
@@ -150,17 +169,6 @@ h2:before {
 .low2 {
     position: absolute;
     bottom: 1%;
-}
-#skilllist {
-    display: flex;
-    justify-content: space-around;
-    width: 50%;
-    margin-left: 1%;
-    padding: 0;
-    border: 1px solid black;
-    padding: 5px;
-    border-radius: 2%;
-    background: rgba(255, 255, 255, 0.8);
 }
 
 #fourth {
