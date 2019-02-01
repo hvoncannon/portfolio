@@ -13,7 +13,7 @@ body {
 }
 .middle {
     background-image: url("./imgs/pipes.png");
-    height: 110vh;
+    height: 130vh;
     width: 100vw;
     background-color: #f1efe2;
     background-attachment: fixed;
@@ -28,27 +28,31 @@ h2 {
     animation-duration: 2s;
 }
 #abm {
-    position: absolute;
-    left: 5%;
+    position: relative;
+    left: 2%;
     top: 10%;
 }
 #aboutMe{
-    position: static;
+    position: absolute;
+    left: 2%;
+    top: 2%;
 }
 #abmbody {
     position: absolute;
-    left:5%;
-    top:15%;
+    left: 2%;
+    top: 100%;
     word-wrap: break-word;
-    width: 400px;
+    width: 350%;
+    border: 1px solid black;
+    padding: 5px;
     border-radius: 5%;
-    background: rgba(204, 204, 204, .4)
+    background: rgba(255, 255, 255, 0.8)
 }
 
 #icons{
     position: absolute;
-    top: 43%;
-    left: 5%;
+    top: 38%;
+    left: 6.5%;
 }
 #LBJP {
     position: absolute;
@@ -107,15 +111,17 @@ h2:before {
     border-bottom: 1px solid white;
     top: 0;
     width: 175%;
-    width: 500px;
+    width: 0px;
     /* transition: width 2s; */
     animation-name: titleLine;
     animation-duration: 3s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
  } 
 
 #skillsbody {
     position: relative;
-    top: 53%;
+    top: 45%;
     left: 2%;
 }
 
@@ -123,6 +129,13 @@ h2:before {
     position: relative;
     top: 56%;
     left: 2%;
+}
+
+#testimonialsSection > p {
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 2%;
+    background: rgba(255, 255, 255, 0.8);
 }
  
 #third{
@@ -139,8 +152,15 @@ h2:before {
     bottom: 1%;
 }
 #skilllist {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
     margin-left: 1%;
     padding: 0;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 2%;
+    background: rgba(255, 255, 255, 0.8);
 }
 
 #fourth {
@@ -169,8 +189,8 @@ h2:before {
     60% { transform: translate(-3px, 1px)}
     70% { transform: translate(3px, 1px)}
     80% { transform: translate(-1px, -1px)}
-    90% { transform: translate(1px, 2px)}
-    100% { transform: translate(1px, -2px)}
+    90% { transform: translate(5px, 2px)}
+    100% { transform: translate(14px, -7px)}
   }
 
   @keyframes shake2 {
