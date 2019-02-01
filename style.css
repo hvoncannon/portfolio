@@ -12,14 +12,17 @@ body {
     height: 100vh;
 }
 .middle {
+    /* display: flex; */
+    /* flex-direction: column; */
     background-image: url("./imgs/pipes.png");
-    /* height: 130vh; */
-    height: 1050px;
+    /* min-height: 100vh; */
+    height: auto;
     width: 100vw;
     background-color: #f1efe2;
     background-attachment: fixed;
     background-position: center;
 }
+
 h2 {
     margin: 0px;
     position: absolute;
@@ -57,7 +60,7 @@ h3 {
 
 #icons{
     position: relative;
-    top: 5%;
+    top: 4%;
     left: -25%;
 }
 
@@ -97,7 +100,7 @@ h3 {
 
 #nashville {
     position: absolute;
-    left: 12%;
+    left: 18%;
     top: 48%;
     max-height: 50%;
     animation-name: shake2;
@@ -114,7 +117,7 @@ h3 {
 #desk {
     position: absolute;
     left: -33%;
-    top: 13%;
+    top: 9%;
     max-height: 50%;
     animation-name: shake3;
     animation-duration: 15s;
@@ -145,9 +148,9 @@ h2:before {
  } 
 
 #testimonialsSection {
-    position: relative;
-    top: 10%;
-    left: 2%;
+    /* position: relative; */
+    margin-top: 12%;
+    margin-left: 2%;
 }
 
 #testimonialsSection > p {
