@@ -25,6 +25,9 @@
 
     #middleRow {
       height: 100vh;
+      background-image: url("./imgs/pipes.png");
+      background-attachment: fixed;
+      background-position: center;
     }
 
     #topMaster {
@@ -54,6 +57,26 @@
       color: #729f98;
       animation: colorChange 4s 3s forwards;
     }
+
+    #aboutMe {
+      margin-bottom: 5%;
+      background-color: #e6cf8b;
+    }
+
+    #skillSection {
+      margin-bottom: 5%;
+      background-color: #e6cf8b;
+    }
+
+    #testimonialsSection {
+      background-color: #e6cf8b;
+    }
+
+    #stripe1 {
+      background-color: #aa863a;
+      width: 100%;
+    }
+
 
     @keyframes titleTextMove {
       0% {
@@ -106,43 +129,50 @@
       </div>
     </div>
     <div class="row" id="middleRow">
-      <div class="col-xl-4 d-flex flex-wrap flex-column">
-        <div id="aboutMe">
-          <h3>About Me</h3>
-          <div id="abmbody">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean rhoncus malesuada sodales.
-            Suspendisse porttitor
-            turpis dui, accumsan tincidunt lorem venenatis sit amet. Aliquam id justo ac ante aliquet
-            malesuada convallis
-            et arcu. Vestibulum sit amet pulvinar elit. Curabitur vehicula mauris risus, nec fermentum
-            leo ultricies
+      <div class="row m-1">
+        <div class="col-xl-5 d-flex flex-column">
+          <div class="mt-3 p-2" id="aboutMe">
+            <h3>About Me</h3>
+            <div id="abmbody">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean rhoncus malesuada sodales.
+              Suspendisse porttitor
+              turpis dui, accumsan tincidunt lorem venenatis sit amet. Aliquam id justo ac ante aliquet
+              malesuada convallis
+              et arcu. Vestibulum sit amet pulvinar elit. Curabitur vehicula mauris risus, nec fermentum
+              leo ultricies
+            </div>
+          </div>
+          <div class="p-2" id="skillSection">
+            <h3 id="skills">Skills</h3>
+            <div id="skillList">
+              HTML | CSS | JavaScript | SQL | NoSQL | Databases | Node | React
+            </div>
+          </div>
+          <div class="p-2" id="testimonialsSection">
+            <h3 id="testimonials">Testimonials</h3>
+            <p>Hayden showcased an extensive understanding in back-end development, from implementing
+              technologies, ensuring 100% functionality, and establishing a successful launch of our website
+              onto Heroku. He also possesses great communication skills, as he was able to stay connected
+              with the front-end development team and ensure that both the front-end and back-end development
+              would work cohesively. <b>-Marvie Solis</b></p>
+            <p>I had the privilege of being in the same group with Hayden on our final project at the UCI
+              Irvine Coding Bootcamp. The bootcamp was fast-paced, but Hayden quickly applied the learnings
+              in building the backbone for the final project. The React.js project was a beast, but Hayden
+              was the glue that integrated all the efforts of the team into a cohesive and functional
+              application. His great attitude contributed to excellent team dynamics during the project. He
+              will be an asset to any team. <b>-Fletcher Bunales</b></p>
           </div>
         </div>
-        <div id="skillSection">
-          <h3 id="skills">Skills</h3>
-          <div id="skillList">
-            HTML | CSS | JavaScript | SQL | NoSQL | Databases | Node | React
-          </div>
-        </div>
-        <div id="testimonialsSection">
-          <h3 id="testimonials">Testimonials</h3>
-          <p>Hayden showcased an extensive understanding in back-end development, from implementing
-            technologies, ensuring 100% functionality, and establishing a successful launch of our website
-            onto Heroku. He also possesses great communication skills, as he was able to stay connected
-            with the front-end development team and ensure that both the front-end and back-end development
-            would work cohesively. <b>-Marvie Solis</b></p>
-          <p>I had the privilege of being in the same group with Hayden on our final project at the UCI
-            Irvine Coding Bootcamp. The bootcamp was fast-paced, but Hayden quickly applied the learnings
-            in building the backbone for the final project. The React.js project was a beast, but Hayden
-            was the glue that integrated all the efforts of the team into a cohesive and functional
-            application. His great attitude contributed to excellent team dynamics during the project. He
-            will be an asset to any team. <b>-Fletcher Bunales</b></p>
+        <div class="col-xl-7" id="pictures">
+          <img id="LBJP" class="img-fluid img-thumbnail" src="./imgs/LBJP.png">
+          <img id="nashville" class="img-thumbnail" src="./imgs/nashville.png">
         </div>
       </div>
-    </div>
-    <div class="col-xl-8" id="pictures">
-      <img id="LBJP" class="img-fluid img-thumbnail" src="./imgs/LBJP.png">
-      <img id="nashville" class="img-thumbnail" src="./imgs/nashville.png">
+      <div class="row">
+        <!-- <div class="col-12"> -->
+          <div class="w-100" id="stripe1">Test</div>
+        <!-- </div> -->
+      </div>
     </div>
   </div>
   </div>
