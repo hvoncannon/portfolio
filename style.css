@@ -10,6 +10,9 @@ body {
 }
 .top {
     height: 100vh;
+    width: 110vw;
+    display: flex;
+    align-items: center;
 }
 .middle {
     /* display: flex; */
@@ -17,7 +20,7 @@ body {
     background-image: url("./imgs/pipes.png");
     /* min-height: 100vh; */
     height: auto;
-    width: 100vw;
+    width: 110vw;
     background-color: #f1efe2;
     background-attachment: fixed;
     background-position: center;
@@ -31,12 +34,20 @@ h2 {
     color: black;
     font-family: 'Libre Franklin', sans-serif;
     font-weight: 300;
+    margin-left: 20%;
     /* display: flex; */
     /* justify-content: flex-end; */
     /* position: relative; */
     /* left: -110%; */
     /* animation-name: titleText; */
     /* animation-duration: 3s; */
+}
+
+@media(max-width: 729px) {
+    h2 {
+        position: relative;
+        top: 30%
+    }
 }
 
 h2:before {
