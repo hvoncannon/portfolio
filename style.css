@@ -23,14 +23,33 @@ body {
     background-position: center;
 }
 
-h2 {
-    margin: 0px;
-    position: absolute;
-    left: 20%;
-    top: 40%;
-    animation-name: titleText;
-    animation-duration: 2s;
+.bottom {
+    min-height: 1500px;
 }
+
+h2 {
+    color: black;
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 300;
+    /* display: flex; */
+    /* justify-content: flex-end; */
+    /* position: relative; */
+    /* left: -110%; */
+    /* animation-name: titleText; */
+    /* animation-duration: 3s; */
+}
+
+h2:before {
+    display: flex;
+    content: "";
+    height: 5px;
+    border-bottom: 1px solid white;
+    width: 175%;
+    /* animation-name: titleLine; */
+    animation-duration: 3s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+ } 
 
 h3 {
     font-weight: 200;
@@ -43,7 +62,6 @@ h3 {
 }
 #aboutMe{
     position: relative;
-    left: 1%;
     top: 2%;
 }
 #abmbody {
@@ -72,7 +90,7 @@ h3 {
 
 #skillList {
     display: flex;
-    justify-content: space-around;
+    /* justify-content: center; */
     width: 50%;
     /* margin-left: 1%; */
     padding: 0;
@@ -129,24 +147,6 @@ h3 {
     animation-duration: 0s;
 }
 
-h2:before {
-    opacity: 0%;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    content: "";
-    height: 5px;
-    border-bottom: 1px solid white;
-    top: 0;
-    width: 175%;
-    width: 0px;
-    /* transition: width 2s; */
-    animation-name: titleLine;
-    animation-duration: 3s;
-    animation-delay: 1.5s;
-    animation-fill-mode: forwards;
- } 
-
 #testimonialsSection {
     /* position: relative; */
     margin-top: 12%;
@@ -181,8 +181,8 @@ h2:before {
 }
 
  @keyframes titleText {
-    0% {left: 0%;}
-    100% {left: 20%;}
+    0% {left: 0%; color: #6C757D;}
+    100% {left: 20%; color: black;}
 } 
 
 @keyframes titleLine {
@@ -230,4 +230,35 @@ h2:before {
     80% { transform: translate(-3px, -1px) rotate(0deg); }
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(0deg); }
+  }
+
+  a {
+      color: black;
+  }
+
+  #iconsTop {
+      color: black;
+      position: relative;
+      left: -78.5%;
+      animation-name: colorChange;
+      animation-duration: 6.5s;
+  }
+
+  .fa-chevron-down {
+      animation-name: opacityChange;
+      animation-duration: 6s;
+  }
+
+  @keyframes colorChange {
+    /* 0% { color: #6C757D } */
+    0% { color: #6C757D }
+    60% { color: #6C757D }
+    /* 50% { color: rgb(145, 156, 167) } */
+    100% { color: black }
+  }
+
+  @keyframes opacityChange {
+      0% { color: #6C757D }
+      75% { color: #6C757D }
+      100% { color: black}
   }
