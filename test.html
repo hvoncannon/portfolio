@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Libre+Franklin|Roboto" rel="stylesheet">
+  <style>
+    #topRow {
+      height: 100vh;
+      background-color: #729f98;
+    }
+
+    #middleRow {
+      height: 100vh;
+    }
+
+    #topMaster {
+      margin-left: 10%;
+      animation: titleTextMove 3s;
+    }
+
+    #name {
+      animation: colorChange 3s;
+      color: black;
+    }
+
+    /* #name:before {
+      display: flex;
+      content: "";
+      border-bottom: 1px solid #f0eceb;
+      width: 0%;
+      animation: titleLine 3s 3s forwards;
+    } */
+
+    #icons {
+      animation: colorChange 4s 3s forwards;
+      color: #729f98;
+    }
+
+    #chevron {
+      color: #729f98;
+      animation: colorChange 4s 3s forwards;
+    }
+
+    @keyframes titleTextMove {
+      0% {
+        margin-left: 0%;
+      }
+
+      100% {
+        margin-left: 10%;
+      }
+    }
+
+    @keyframes colorChange {
+      0% {
+        color: #729f98;
+      }
+
+      100% {
+        color: black;
+      }
+    }
+
+    @keyframes titleLine {
+      0% {
+        width: 0px;
+      }
+
+      100% {
+        width: 175%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid">
+
+    <div class="row align-items-center" id="topRow">
+      <div class="flex-column" id="topMaster">
+        <div>
+          <h1 id="name">Hayden VonCannon</h1>
+        </div>
+        <div class="d-flex justify-content-between" id="icons">
+          <i class="fab fa-html5 low2 fa-2x"></i>
+          <i class="fab fa-css3-alt low2 fa-2x"></i>
+          <i class="fab fa-js low2 fa-2x"></i>
+          <i class="fab fa-node-js low2 fa-2x"></i>
+          <i class="fas fa-database low2 fa-2x"></i>
+          <i class="fab fa-react low2 fa-2x"></i>
+        </div>
+      </div>
+    </div>
+    <div class="row" id="middleRow">
+      <div class="col-xl-4 d-flex flex-wrap flex-column">
+        <div id="aboutMe">
+          <h3>About Me</h3>
+          <div id="abmbody">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean rhoncus malesuada sodales.
+            Suspendisse porttitor
+            turpis dui, accumsan tincidunt lorem venenatis sit amet. Aliquam id justo ac ante aliquet
+            malesuada convallis
+            et arcu. Vestibulum sit amet pulvinar elit. Curabitur vehicula mauris risus, nec fermentum
+            leo ultricies
+          </div>
+        </div>
+        <div id="skillSection">
+          <h3 id="skills">Skills</h3>
+          <div id="skillList">
+            HTML | CSS | JavaScript | SQL | NoSQL | Databases | Node | React
+          </div>
+        </div>
+        <div id="testimonialsSection">
+          <h3 id="testimonials">Testimonials</h3>
+          <p>Hayden showcased an extensive understanding in back-end development, from implementing
+            technologies, ensuring 100% functionality, and establishing a successful launch of our website
+            onto Heroku. He also possesses great communication skills, as he was able to stay connected
+            with the front-end development team and ensure that both the front-end and back-end development
+            would work cohesively. <b>-Marvie Solis</b></p>
+          <p>I had the privilege of being in the same group with Hayden on our final project at the UCI
+            Irvine Coding Bootcamp. The bootcamp was fast-paced, but Hayden quickly applied the learnings
+            in building the backbone for the final project. The React.js project was a beast, but Hayden
+            was the glue that integrated all the efforts of the team into a cohesive and functional
+            application. His great attitude contributed to excellent team dynamics during the project. He
+            will be an asset to any team. <b>-Fletcher Bunales</b></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-8" id="pictures">
+      <img id="LBJP" class="img-fluid img-thumbnail" src="./imgs/LBJP.png">
+      <img id="nashville" class="img-thumbnail" src="./imgs/nashville.png">
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>
