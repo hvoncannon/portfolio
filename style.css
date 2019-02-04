@@ -35,12 +35,12 @@ body {
   @media (min-width: 1025px) {
     #nashville {
       position: relative;
-      top: 30%;
+      top: 16%;
       left: 10%
     }
     #LBJP {
         position: relative;
-        top: 15%;
+        top: 4%;
         left: 5%
       }
   }
