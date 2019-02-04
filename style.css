@@ -31,19 +31,6 @@ body {
     animation: titleLine 2s 2s forwards;
      } 
   }
-  
-  /* @media (min-width: 1025px) {
-    #nashville {
-      position: relative;
-      top: 16%;
-      left: 10%
-    }
-    #LBJP {
-        position: relative;
-        top: 4%;
-        left: 5%
-      }
-  } */
 
   @media (min-width: 1158px) and (min-height: 718px){
     
@@ -58,6 +45,19 @@ body {
     #LBJP {
         position: relative;
         left: 2%
+      }
+  } 
+
+  @media (min-width: 1441px) {
+    #nashville {
+      position: relative;
+      top: 16%;
+      left: 10%
+    }
+    #LBJP {
+        position: relative;
+        top: 4%;
+        left: 5%
       }
   } 
 
