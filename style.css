@@ -28,7 +28,7 @@ body {
     content: "";
     border-bottom: 1px solid #f0eceb;
     width: 0%;
-    animation: titleLine 3s 3s forwards;
+    animation: titleLine 2s 2s forwards;
      } 
   }
   
@@ -87,7 +87,7 @@ body {
   }
 
   #icons {
-    animation: colorChange 4s 3s forwards;
+    animation: colorChange 2s 3s forwards;
     color: #729f98;
   }
 
