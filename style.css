@@ -37,19 +37,23 @@ body {
   }
 
   @media (width: 1440px) and (height: 718px) {
-      body {
-          overflow: hidden;
-      }
+      /* body {
+          overflow-x: hidden;
+      } */
     #nashville {
       position: relative;
-      top: 30%;
-      left: 5%
+      top: 40%;
+      left: -1%
     }
     #LBJP {
         position: relative;
         top: 15%;
-        left: 5%
+        left: 2%
       }
+  }
+
+  #testimonialsSection {
+      margin-bottom: 10px;
   }
 
 
