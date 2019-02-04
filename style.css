@@ -1,279 +1,139 @@
 body {
-    background-color: #6C757D;
-    overflow-x: hidden;
-}
-
-.container-fluid{
-    width:100%;
-}
-.row{
-    position: relative;
-}
-.container-fluid {
-    height: 100vh;
-}
-.top {
-    height: 100vh;
-    width: 110vw;
-    display: flex;
-    align-items: center;
-}
-.middle {
-    /* display: flex; */
-    /* flex-direction: column; */
-    background-image: url("./imgs/pipes.png");
-    /* min-height: 100vh; */
-    height: auto;
-    width: 110vw;
-    background-color: #f1efe2;
-    background-attachment: fixed;
-    background-position: center;
-}
-
-.bottom {
-    min-height: 1500px;
-}
-
-h2 {
     color: black;
-    font-family: 'Libre Franklin', sans-serif;
-    font-weight: 300;
-    margin-left: 20%;
-    /* display: flex; */
-    /* justify-content: flex-end; */
-    /* position: relative; */
-    /* left: -110%; */
-    /* animation-name: titleText; */
-    /* animation-duration: 3s; */
-}
-
-@media(max-width: 729px) {
-    h2 {
-        position: relative;
-        top: 30%
-    }
-}
-
-h2:before {
-    display: flex;
-    content: "";
-    height: 5px;
-    border-bottom: 1px solid white;
-    width: 175%;
-    /* animation-name: titleLine; */
-    animation-duration: 3s;
-    animation-delay: 1.5s;
-    animation-fill-mode: forwards;
- } 
-
-h3 {
-    font-weight: 200;
-}
-
-#abm {
-    position: relative;
-    left: 2%;
-    top: 10%;
-}
-#aboutMe{
-    position: relative;
-    top: 2%;
-}
-#abmbody {
-    position: relative;
-    left: 2%;
-    top: 100%;
-    word-wrap: break-word;
-    width: 50%;
-    border: 1px solid black;
-    padding: 5px;
-    /* border-radius: 5%; */
-    background: rgba(255, 255, 255, 0.8)
-}
-
-#icons{
-    position: relative;
-    top: 4%;
-    left: -25%;
-}
-
-#skillSection {
-    position: relative;
-    top: 6%;
-    left: 2%;
-}
-
-#skillList {
-    display: flex;
-    /* justify-content: center; */
-    width: 50%;
-    /* margin-left: 1%; */
-    padding: 0;
-    border: 1px solid black;
-    padding: 5px;
-    /* border-radius: 2%; */
-    background: rgba(255, 255, 255, 0.8);
-}
-
-#LBJP {
-    position: absolute;
-    left: 28%;
-    top: 5%;
-    max-height: 50%;
-    animation-name: shake1;
-    animation-duration: 17s;
-    animation-iteration-count: infinite; 
-}
-
-#LBJP:hover {
-    animation-name: shake;
-    animation-duration: 0s;
-    z-index: 1;
-}
-
-#nashville {
-    position: absolute;
-    left: 18%;
-    top: 48%;
-    max-height: 50%;
-    animation-name: shake2;
-    animation-duration: 18s;
-    animation-iteration-count: infinite;
-}
-
-#nashville:hover {
-    animation-name: shake;
-    animation-duration: 0s;
-    z-index: 1;
-}
-
-#desk {
-    position: absolute;
-    left: -33%;
-    top: 9%;
-    max-height: 50%;
-    animation-name: shake3;
-    animation-duration: 15s;
-    animation-iteration-count: infinite;
-}
-
-#desk:hover {
-    animation-name: shake;
-    animation-duration: 0s;
-}
-
-#testimonialsSection {
-    /* position: relative; */
-    margin-top: 12%;
-    margin-left: 2%;
-}
-
-#testimonialsSection > p {
-    border: 1px solid black;
-    padding: 5px;
-    /* border-radius: 2%; */
-    background: rgba(255, 255, 255, 0.8);
-}
- 
-#third{
-    margin-top: 5%;
-    height: 110vh;
-}
-.low {
-    position: absolute;
-    bottom: 4.5%;
-    left: 49.5%;
-}
-.low2 {
-    position: absolute;
-    bottom: 1%;
-}
-
-#fourth {
-        height: 500px;
-        width: 100vw;
-        background-color: #f1efe2;
-}
-
- @keyframes titleText {
-    0% {left: 0%; color: #6C757D;}
-    100% {left: 20%; color: black;}
-} 
-
-@keyframes titleLine {
-    0% {width:0px;}
-    100% {width: 500px;}
-}
-
-  @keyframes shake1 {
-    0% { transform: translate(5px, 5px)}
-    10% { transform: translate(-3px, -5px)}
-    20% { transform: translate(-4px, 0px)}
-    30% { transform: translate(-15px, 2px)}
-    40% { transform: translate(1px, -1px)}
-    50% { transform: translate(-5px, 3px)}
-    60% { transform: translate(-3px, 1px)}
-    70% { transform: translate(3px, 1px)}
-    80% { transform: translate(-1px, -1px)}
-    90% { transform: translate(5px, 2px)}
-    100% { transform: translate(14px, -7px)}
-  }
-
-  @keyframes shake2 {
-    0% { transform: translate(-3px, -2px)}
-    10% { transform: translate(3px, -5px)}
-    20% { transform: translate(-4px, 0px)}
-    30% { transform: translate(5px, 2px)}
-    40% { transform: translate(10px, -1px)}
-    50% { transform: translate(5px, 3px)}
-    60% { transform: translate(-3px, 1px)}
-    70% { transform: translate(9px, -1px)}
-    80% { transform: translate(-1px, -1px)}
-    90% { transform: translate(-6px, 2px)}
-    100% { transform: translate(1px, -2px)}
-  }
-
-  @keyframes shake3 {
-    0% { transform: translate(6px, -5px) rotate(0deg); }
-    10% { transform: translate(-3px, -8px) rotate(0deg); }
-    20% { transform: translate(-6px, 0px) rotate(0deg); }
-    30% { transform: translate(5px, 4px) rotate(0deg); }
-    40% { transform: translate(10px, -1px) rotate(0deg); }
-    50% { transform: translate(-5px, 3px) rotate(0deg); }
-    60% { transform: translate(8px, -1px) rotate(0deg); }
-    70% { transform: translate(3px, 3px) rotate(0deg); }
-    80% { transform: translate(-3px, -1px) rotate(0deg); }
-    90% { transform: translate(1px, 2px) rotate(0deg); }
-    100% { transform: translate(1px, -2px) rotate(0deg); }
   }
 
   a {
-      color: black;
+    color: black;
   }
 
-  #iconsTop {
-      color: black;
+  a:hover {
+    color: white;
+  }
+
+  #topRow {
+    height: 100vh;
+    background-color: #729f98;
+  }
+
+  #aboutRow {
+    min-height: 105vh;
+    background-image: url("./imgs/pipes.png");
+    background-attachment: fixed;
+    background-position: center;
+  }
+
+  /* 
+  @media (min-width: 1439px) {
+    #myImg2 {
       position: relative;
-      left: -78.5%;
-      animation-name: colorChange;
-      animation-duration: 6.5s;
+      top: -25%;
+      left: 30%
+    }
+  } */
+
+  #projectRow {
+    background-color: #729f98;
   }
 
-  .fa-chevron-down {
-      animation-name: opacityChange;
-      animation-duration: 6s;
+  #contactRow {
+    min-height: 100vh;
+    background-image: url("./imgs/pipes.png");
+    background-attachment: fixed;
+    background-position: center;
+  }
+
+  #topMaster {
+    margin-left: 10%;
+    animation: titleTextMove 3s;
+  }
+
+  #name {
+    animation: colorChange 3s;
+  }
+
+  /* #name:before {
+    display: flex;
+    content: "";
+    border-bottom: 1px solid #f0eceb;
+    width: 0%;
+    animation: titleLine 3s 3s forwards;
+  } */
+
+  #icons {
+    animation: colorChange 4s 3s forwards;
+    color: #729f98;
+  }
+
+  #chevron {
+    color: #729f98;
+    animation: colorChange 4s 3s forwards;
+  }
+
+  #aboutMe {
+    margin-bottom: 5%;
+    background-color: #e6cf8b;
+  }
+
+  #skillSection {
+    margin-bottom: 5%;
+    background-color: #e6cf8b;
+  }
+
+  #testimonialsSection {
+    background-color: #e6cf8b;
+  }
+
+  #projectHeader {
+    color: #ffebaf;
+    /* text-shadow: 2.5px 2.5px rgba(34, 38, 75, .4); */
+    text-shadow: 1.5px 1.3px rgba(0, 0, 0, .3);
+  }
+
+  #stripe1 {
+    background-color: #b56969;
+    color: white;
+    min-height: 50px;
+  }
+
+  #stripe2 {
+    background-color: #22264b;
+    color: white;
+    min-height: 50px;
+  }
+
+  .contactTable {
+    background-color: #e6cf8b;
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+
+
+  @keyframes titleTextMove {
+    0% {
+      margin-left: 0%;
+    }
+
+    100% {
+      margin-left: 10%;
+    }
   }
 
   @keyframes colorChange {
-    /* 0% { color: #6C757D } */
-    0% { color: #6C757D }
-    60% { color: #6C757D }
-    /* 50% { color: rgb(145, 156, 167) } */
-    100% { color: black }
+    0% {
+      color: #729f98;
+    }
+
+    100% {
+      color: black;
+    }
   }
 
-  @keyframes opacityChange {
-      0% { color: #6C757D }
-      75% { color: #6C757D }
-      100% { color: black}
+  @keyframes titleLine {
+    0% {
+      width: 0px;
+    }
+
+    100% {
+      width: 175%;
+    }
   }
