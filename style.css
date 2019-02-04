@@ -22,14 +22,19 @@ body {
     background-position: center;
   }
 
-  /* 
-  @media (min-width: 1439px) {
-    #myImg2 {
+  
+  @media (min-width: 1025px) {
+    #nashville {
       position: relative;
-      top: -25%;
-      left: 30%
+      top: 30%;
+      left: 10%
     }
-  } */
+    #LBJP {
+        position: relative;
+        top: 15%;
+        left: 5%
+      }
+  }
 
   #projectRow {
     background-color: #729f98;
