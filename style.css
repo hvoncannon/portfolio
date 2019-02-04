@@ -36,6 +36,23 @@ body {
       }
   }
 
+  @media (width: 1440px) and (height: 718px) {
+      body {
+          overflow: hidden;
+      }
+    #nashville {
+      position: relative;
+      top: 30%;
+      left: 5%
+    }
+    #LBJP {
+        position: relative;
+        top: 15%;
+        left: 5%
+      }
+  }
+
+
   #projectRow {
     background-color: #729f98;
   }
