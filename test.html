@@ -6,8 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
     crossorigin="anonymous"></script>
+    <script src="dist/clipboard.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
@@ -18,12 +19,35 @@
     crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Libre+Franklin|Roboto" rel="stylesheet">
   <style>
+    body {
+      color: black;
+    }
+
+    a{
+      color: black;
+    }
+
+    a:hover {
+      color: white;
+    }
+
     #topRow {
       height: 100vh;
       background-color: #729f98;
     }
 
-    #middleRow {
+    #aboutRow {
+      min-height: 105vh;
+      background-image: url("./imgs/pipes.png");
+      background-attachment: fixed;
+      background-position: center;
+    }
+
+    #projectRow {
+      background-color: #729f98;
+    }
+
+    #contactRow {
       min-height: 100vh;
       background-image: url("./imgs/pipes.png");
       background-attachment: fixed;
@@ -37,7 +61,6 @@
 
     #name {
       animation: colorChange 3s;
-      color: black;
     }
 
     /* #name:before {
@@ -72,6 +95,12 @@
       background-color: #e6cf8b;
     }
 
+    #projectHeader {
+      color: #ffebaf;
+      /* text-shadow: 2.5px 2.5px rgba(34, 38, 75, .4); */
+      text-shadow: 1.5px 1.3px rgba(0, 0, 0, .3);
+    }
+
     #stripe1 {
       background-color: #b56969;
       color: white;
@@ -80,6 +109,12 @@
     #stripe2 {
       background-color: #22264b;
       color: white;
+    }
+
+    .contactTable {
+      background-color: #e6cf8b;
+      margin-right: 10%;
+      margin-left: 10%;
     }
 
 
@@ -133,7 +168,7 @@
         </div>
       </div>
     </div>
-    <div class="row m2" id="middleRow">
+    <div class="row m2" id="aboutRow">
       <div class="col-sm-5 d-flex flex-column">
         <div class="mt-3 p-2" id="aboutMe">
           <h3>About Me</h3>
@@ -168,13 +203,87 @@
         </div>
       </div>
       <div class="col-sm-7 mt-3 mb-1" id="pictures">
-          <img id="LBJP" class="img-fluid img-thumbnail mt-2" src="./imgs/LBJP.png">
-          <img id="nashville" class="img-thumbnail mt-2" src="./imgs/nashville.png">
+        <img id="LBJP" class="img-fluid img-thumbnail mt-2" src="./imgs/LBJP.png">
+        <img id="nashville" class="img-thumbnail mt-2" src="./imgs/nashville.png">
       </div>
-      <div class="col-sm-12 d-flex align-items-end justify-content-center" id="stripe1"><h3>Projects</h3></div>
+      <div class="col-sm-12 d-flex align-items-end justify-content-center" id="stripe1">
+        <h3>Projects</h3>
+      </div>
       <div class="col-sm-12 d-flex align-items-start justify-content-center" id="stripe2"><i class="fas fa-chevron-down low2 fa-2x"></i></div>
+    </div>
+    <div class="row pt-4" id="projectRow">
+      <div class="col-sm-12">
+        <div class="row">
+          <div class="col-sm-12 d-flex flex-column align-items-center justify-content-center">
+            <h2 id="projectHeader">Team Projects</h2>
+            <h6 id="projectHeader"><i>Click or Tap for More Info</i></h6>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 p-3">
+            <h4>Who's Down</h4>
+            <img class="img-thumbnail" id="img1" src="./imgs/whosDown.gif">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing </p>
+          </div>
+          <div class="col-sm-4 p-3">
+            <h4>PostIt</h4>
+            <img class="img-thumbnail" src="./imgs/posltit.gif">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing </p>
+          </div>
+          <div class="col-sm-4 p-3">
+            <h4>Hangman</h4>
+            <img class="img-thumbnail" src="./imgs/hangman.gif">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing </p>
+          </div>
+        </div>
+        <div class="col-sm-12 d-flex flex-column align-items-center justify-content-center">
+          <h2 id="projectHeader">Solo Projects</h2>
+          <h6 id="projectHeader"><i>Click or Tap for More Info</i></h6>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <h4>Who's Down</h4>
+            <img class="img-thumbnail" id="img1" src="./imgs/whosDown.gif">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing </p>
+          </div>
+          <div class="col-sm-4">
+            <h4>PostIt</h4>
+            <img class="img-thumbnail" src="./imgs/posltit.gif">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing </p>
+          </div>
+          <div class="col-sm-4">
+            <h4>Hangman</h4>
+            <img class="img-thumbnail" src="./imgs/hangman.gif">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center" id="contactRow">
+      <div class="col-sm-12">
+        <div class="row pt-3 pb-3 mt-3 justify-content-center contactTable">Repositories and Contact Info</div>
+        <div class="row contactTable p-1 justify-content-center">
+          <div class="col-sm-3"><a href="https://github.com/hvoncannon"><i class="fab fa-github-square fa-2x"></i></a></div>
+          <div class="col-sm-9">https://github.com/hvoncannon</div>
+        </div>
+        <div class="row contactTable p-1">
+          <div class="col-sm-3"><a href="https://www.linkedin.com/in/haydenvoncannon/"><i class="fab fa-linkedin fa-2x"></i></a></div>
+          <div class="col-sm-9">https://www.linkedin.com/in/haydenvoncannon/</div>
+        </div>
+        <div class="row contactTable p-1">
+          <div class="col-sm-3"><a href="mailto:hayden.voncannon@gmail.com"><i class="fas fa-envelope fa-2x"></i></a></div>
+          <div class="col-sm-9">hayden.voncannon@gmail.com</div>
+        </div>
+        <div class="row contactTable p-1 pb-3">
+          <div class="col-sm-3"><i class="fas fa-phone fa-2x"></i></div>
+          <div class="col-sm-9">+1 (949) 547-3074</div>
+          <!-- The text field -->
+
+        </div>
+      </div>
     </div>
   </div>
 </body>
+<script src="app.js"></script>
 
 </html>
