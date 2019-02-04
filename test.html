@@ -42,6 +42,14 @@
       background-position: center;
     }
 
+    @media (height: 718px) {
+      #img2 {
+        position: relative;
+        top: -25%;
+        left: 30%
+      }
+    }
+
     #projectRow {
       background-color: #729f98;
     }
@@ -204,8 +212,12 @@
         </div>
       </div>
       <div class="col-sm-7 mt-3 mb-1" id="pictures">
-        <img id="LBJP" class="img-fluid img-thumbnail mt-2" src="./imgs/LBJP.png">
-        <img id="nashville" class="img-thumbnail mt-2" src="./imgs/nashville.png">
+        <div class="col-sm" id="img1">
+            <img id="LBJP" class="img-fluid img-thumbnail mt-2" src="./imgs/LBJP.png">
+        </div>
+        <div class="col-sm" id="img2">
+            <img id="nashville" class="img-thumbnail mt-2" src="./imgs/nashville.png">
+        </div>
       </div>
       <div class="col-sm-12 d-flex align-items-end justify-content-center" id="stripe1">
         <h3>Projects</h3>
