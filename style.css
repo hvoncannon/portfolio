@@ -32,7 +32,7 @@ body {
      } 
   }
   
-  @media (min-width: 1025px) {
+  /* @media (min-width: 1025px) {
     #nashville {
       position: relative;
       top: 16%;
@@ -43,23 +43,23 @@ body {
         top: 4%;
         left: 5%
       }
-  }
+  } */
 
-  @media (width: 1440px) and (height: 718px) {
-      /* body {
-          overflow-x: hidden;
-      } */
+  @media (min-width: 1158px) and (min-height: 718px){
+    
+    body {
+        overflow-x: hidden;
+    }
     #nashville {
       position: relative;
-      top: 40%;
-      left: -1%
+      top: -15%;
+      left: 40%
     }
     #LBJP {
         position: relative;
-        top: 15%;
         left: 2%
       }
-  }
+  } 
 
   #testimonialsSection {
       margin-bottom: 10px;
